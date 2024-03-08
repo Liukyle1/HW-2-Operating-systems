@@ -13,13 +13,13 @@ Lets see how this code functions and see which process wins the lottery!
 * It has private member variables
    ‘processes’(a vector in which to store the processes)
 * Its public member functions include:
-	addProcess - adds a new process to the scheduler
-	allocateTickets- increases the # of tickets for a specified process
+	addProcess - adds a new process to the scheduler,
+	allocateTickets- increases the # of tickets for a specified process, and
 	selectWInner() - selects a winning process based on lottery tickets at random.
 
 * For the random # generation an function called selectWinner() is created
 * This function will start by calculating the total number of tickets
-* It will then generate a random winning ticket # by using a mersenne twister generator
+* It will then generate a random winning ticket # by using a mersenne twister generator;
   	Mersenne twister - a well established pseudorandom number generator developed in the 1990s 
 * After generating this ticket number it will then go through a loop to iterate and match the processes to the winning number.
 * In the main function an instance of the scheduler class is created called ‘scheduler’
